@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sectionFaceRecognition"
+        android:text="@string/face_recognition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    
+    <RadioGroup
+        android:id="@+id/algorithmGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        
+        <RadioButton
+            android:id="@+id/eigenAlgorithm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/eigen" />
+        <RadioButton
+            android:id="@+id/fisherAlgorithm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/fisher" />
+		<RadioButton
+            android:id="@+id/lbphAlgorithm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/lbph" />
+        
+    </RadioGroup>
+    
+	<Button
+	    android:id="@+id/trainButton"
+	    android:text="@string/train"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="train"
+    />
+	
+    <Button
+	    android:id="@+id/recognizeInImageButton"
+	    android:text="@string/recognize_image"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="recognizeInImage"
+    />
+	
+	<Button
+	    android:id="@+id/recognizeInVideoButton"
+	    android:text="@string/recognize_video"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="recognizeInVideo"
+    />
+	
+    <TextView
+        android:id="@+id/sectionHumanDetection"
+        android:text="@string/human_detection" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    
+    <Button
+	    android:id="@+id/detectInVideoButton"
+	    android:text="@string/detect_video"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="detectInVideo"
+    />
+
+   <Button
+	    android:id="@+id/wipeButton"
+	    android:text="@string/wipe"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="wipe"
+    />
+   
+    <Button
+	    android:id="@+id/saveButton"
+	    android:text="@string/save_video"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="saveVideo"
+    />
+    
+    <Button
+	    android:id="@+id/playButton"
+	    android:text="@string/playVideo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="playVideo"
+    />
+    
+   <!-- 
+   <Button
+	    android:id="@+id/testButton"
+	    android:text="@string/test"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="test"
+    />
+   -->
+   
+</LinearLayout>

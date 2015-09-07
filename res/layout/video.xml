@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 
+    <org.opencv.android.JavaCameraView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/java_camera_view" />
+ 	-->
+    
+    <com.test.opencvtest.CustomCameraView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/java_camera_view" />
+ 	
+    <Button
+        android:id="@+id/record_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" 
+        android:layout_alignParentLeft="true"
+        android:text="@string/record_video"
+        android:onClick="recordVideo"
+        />
+    
+    <Button
+        android:id="@+id/upload_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" 
+        android:layout_toRightOf="@id/record_video"
+        android:text="@string/upload_video"
+        android:onClick="uploadVideo"
+        />
+    
+    <Button
+        android:id="@+id/playback_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" 
+        android:layout_toRightOf="@id/upload_video"
+        android:text="@string/playback_video"
+        android:onClick="playbackVideo"
+        />
+    
+    <Button
+        android:id="@+id/swap_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/playback_video"
+        android:text="@string/swap_camera"
+        android:onClick="swapCamera"
+        />
+    
+</RelativeLayout>
